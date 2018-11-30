@@ -39,5 +39,8 @@ models.sequelize.sync().then(function() {*/
     app.listen(process.env.PORT, function() {
     console.log('Express server listening on port 3000');
   });
+  app.get('/',function(req,res){
+    res.send("Hello World !")
+  })
 //});
 /* ceci est un test*/
